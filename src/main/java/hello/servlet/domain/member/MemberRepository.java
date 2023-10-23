@@ -18,7 +18,7 @@ public class MemberRepository {
     private static final MemberRepository instance = new MemberRepository(); //싱글톤으로 만든다
 
     //싱글톤 만들 때는 private으로 생성자를 막아야 함
-    static MemberRepository getInstance(){
+    public static MemberRepository getInstance(){
         return instance; //무조건 얘로 조회하기
     }
 
